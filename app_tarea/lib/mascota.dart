@@ -32,7 +32,7 @@ class MascotaApp extends StatelessWidget {
     icon: Icon(Icons.arrow_back, color: Colors.white),
     onPressed: () => Navigator.of(context).pop(),
   ), 
-          title: Text('Carnes'),
+          title: Text('Mascotas'),
         ),
         body: Table(
           children: <TableRow>[

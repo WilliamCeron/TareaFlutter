@@ -39,7 +39,7 @@ Widget cuerpoApp(){
   return Container (
     decoration: BoxDecoration(
       
-    image: DecorationImage (image: NetworkImage("https://i.pinimg.com/originals/78/33/46/783346bd25001247057e2c3d0de216fe.jpg"),
+    image: DecorationImage (image: NetworkImage("https://res.allmacwallpaper.com/get/iMac-21-inch-wallpapers/Abstract-blue-leaf-1920x1080/1995-9.jpg"),
     fit: BoxFit.cover
     )
       

@@ -36,6 +36,40 @@ class _InicioState extends State<Inicio> {
       appBar: AppBar(
         title: Text("Menu"),
       ),
+      drawer:  Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text("WILLIAM CERON", style:  TextStyle(fontWeight: FontWeight.bold,fontSize: 17.0),), 
+              accountEmail: Text("2532222017@mail.utec.edu.sv"),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: NetworkImage("https://i.pinimg.com/236x/37/11/c8/3711c866893fae8eefa3e3ffe1c46155.jpg"),
+              ),
+              ),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text("Perfil"),
+              
+            ),
+            ListTile(
+              leading: Icon(Icons.shopping_cart_outlined),
+              title: Text("Carrito"),
+              
+            ),
+            ListTile(
+              leading: Icon(Icons.exit_to_app),
+              title: Text("Cerrar Sesion"),
+              onTap: (){
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>  FlutterApp()),
+            );
+              },
+            )
+
+          ],
+        ),
+      ),
       body: Container(
         decoration: BoxDecoration(
       

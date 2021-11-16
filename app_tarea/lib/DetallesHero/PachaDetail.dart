@@ -27,7 +27,23 @@ class PachaDetail extends StatelessWidget {
                 style: TextStyle(fontSize: 20),
                 
               ))
-              
+              ,
+              FlatButton(
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18.0),
+                side: BorderSide(color: Colors.green)),
+                color: Colors.blueAccent,
+                textColor: Colors.white,
+                padding: EdgeInsets.symmetric(horizontal: 130,vertical: 10),
+                onPressed: () {
+                },
+                child: Text(
+                  "Agregar al carrito".toUpperCase(),
+                  style: TextStyle(
+                  fontSize: 14.0,
+                ),
+                ),
+              ),
               
               
             ],

@@ -38,7 +38,7 @@ class _InicioState extends State<Inicio> {
      body: Container(
        decoration: BoxDecoration(
       
-    image: DecorationImage (image: NetworkImage("https://i.pinimg.com/originals/78/33/46/783346bd25001247057e2c3d0de216fe.jpg"),
+    image: DecorationImage (image: NetworkImage("https://i.pinimg.com/236x/8a/64/4f/8a644f82a5f896cdea1f0105170fc367--iphone--wallpaper-wallpapers-ipad.jpg"),
     fit: BoxFit.cover
     )
       
@@ -50,30 +50,51 @@ class _InicioState extends State<Inicio> {
           mensaje(),
           camposEmail(),
           camposPass(),
-          ElevatedButton(
-          child: const Text('INGRESAR'),
-          onPressed: () {
-              
-            Navigator.push(
+          
+        FlatButton(
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18.0),
+        side: BorderSide(color: Colors.blueAccent)),
+        color: Colors.blueAccent,
+        textColor: Colors.white,
+        padding: EdgeInsets.symmetric(horizontal: 130,vertical: 10),
+        onPressed: () {
+          Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const menuapp()),
             );
-          
-          },
-           
+        },
+        child: Text(
+          "INGRESAR".toUpperCase(),
+          style: TextStyle(
+          fontSize: 14.0,
         ),
-        ElevatedButton(
-          child: const Text('REGISTRARSE'),
-          onPressed: () {
-              
-            Navigator.push(
+        ),
+        ),
+        FlatButton(
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18.0),
+        side: BorderSide(color: Colors.greenAccent)),
+        color: Colors.greenAccent,
+        textColor: Colors.white,
+        padding: EdgeInsets.symmetric(horizontal: 130,vertical: 10),
+        onPressed: () {
+          Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const registroApp()),
             );
-          
-          },
-           
-        )
+        },
+        child: Text(
+          "REGISTRARSE".toUpperCase(),
+          style: TextStyle(
+          fontSize: 14.0,
+        ),
+        ),
+        ),
+
+
+
+        
         ],
       
         )
